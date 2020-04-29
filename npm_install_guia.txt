@@ -1,0 +1,45 @@
+Se inicia el comando npm init para que se inicie el programa y nos guíe por la 
+instalación de un paquete que queramos instalar.
+
+Lo primero es el nombre, que debe ser url friendly, es decir, sin espacios, caracteres
+especiales, mayusculas, etc.
+
+Luego se van poniendo más datos como la versión, descripción, etc.
+
+El entry point es el primer archivo de node que se ejecuta e inicia la aplicación, 
+en este caso, app.js.
+
+Podemos realizar pruebas, poner un repositorio de git, keywords es por si se comparte.
+
+Este archivo es muy importante, ya que cuando se mueva nuestro proyecto a otro sitio, 
+en este archivo se encuentran todas las dependencias de todos los paquetes.
+
+A la hora de instalar se puede hacer de la forma:
+
+npm i yargs --save el --save indica que esa librería es una dependencia necesaria para
+que la aplicación funcione.
+
+Se modifica el package.json con las dependecias, un package-lock.json que tiene un registro
+de todo lo que hizo para poder tener instalado el yargs u otras librerías en el proyecto.
+
+Además, se ha creado la carpeta node_modules que tiene los paquetes y plugins necesarios.
+
+A la hora de subir los repositorios un proyecto para que otro usuario lo descargue, nunca
+se sube la carpeta modules, ya que simplemente con el archivo package.json si lo tenemos
+y hacemos 
+
+npm install
+
+se instala todo lo necesario para el proyecto.
+
+El otro tipo de instalación es por ejemplo,
+
+npm install --save-dev nodemon
+
+esto me instala el paquete nodemon como una dependencia de desarrollo local del proyecto, 
+es decir, que nodemon no requiere privilegios de administrador y se instala de forma 
+local al proyecto.
+
+Si yo quiero desinstalar un paquete:
+
+npm uninstall nodemon
