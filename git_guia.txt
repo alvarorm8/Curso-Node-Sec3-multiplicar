@@ -1,0 +1,30 @@
+Para iniciar el git se va a una carpeta y se abre el cmd:
+
+git init
+git status (muestra el estado de la carpeta, el estado de los archivos)
+Se crea el .gitignore y se añade los archivos y carpetas que no se quieran subir, 
+en este caso:
+
+node_modules/
+tablas/ (también se puede poner como tablas/*.txt)
+
+git add . (el punto quiere decir que se añade todo) al git
+
+Con esto se añaden los archivos al stage, y es a lo que se le realiza el commit, que
+es como una imagen del estado de los archivos, que posteriormente se sube a git.
+
+git commit -m "Commit inicial"
+
+git remote add origin https://github.com/alvarorm8/Curso-Node-Sec3-multiplicar.git
+
+git push -u origin master
+
+Si posteriormente modifico algún archivo, creo nuevos, etc. puedo añadirlos para hacer
+un nuevo push poniendo:
+
+git add archivo (nuevos)
+
+o simplemente poner
+
+git add . (añade todo, modificados y nuevos, mejor esto siempre que el .gitignore esté
+creado).
