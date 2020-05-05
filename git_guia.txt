@@ -28,3 +28,11 @@ o simplemente poner
 
 git add . (añade todo, modificados y nuevos, mejor esto siempre que el .gitignore esté
 creado).
+
+Para crear una release, es decir, poder descargar el código en una determinada versión:
+
+git tag -a v1.0.0 -m "Primera versión"
+
+Con git tag se pueden ver todas las tags que tengo
+
+git push --tag
